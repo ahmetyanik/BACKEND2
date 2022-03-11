@@ -1,0 +1,19 @@
+{
+  "veritabani": [
+    "ahmet",
+    "ahmet",
+    "ahmet",
+    {
+      "isim": "ahmet",
+      "yas": "33"
+    },
+    {
+      "urunAdi": "selpak",
+      "urunFiyati": 3
+    },
+    {
+      "urunAdi": "coca cola",
+      "urunFiyati": 5
+    }
+  ]
+}

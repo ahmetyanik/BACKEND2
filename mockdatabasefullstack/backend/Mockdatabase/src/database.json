@@ -1,0 +1,53 @@
+{
+  "database": [
+    {
+      "title": "Ahmet",
+      "artist": "Ahmet",
+      "year": "2020",
+      "image": "https://www.bing.com/th?id=ALSTUB3C2C37314D32B4F0BC4B99401A1657E5E122BB38503A670C95C75E0EDCA5C6D&w=472&h=280&rs=2&o=6&oif=webp&pid=SANGAM",
+      "price": "28",
+      "id": 5
+    },
+    {
+      "title": "GALATASARAY",
+      "artist": "Ahmet",
+      "year": 2025,
+      "image": "image",
+      "price": 25,
+      "id": 4
+    },
+    {
+      "title": "GALATASARAY",
+      "artist": "Ahmet",
+      "year": 2025,
+      "image": "image",
+      "price": 25,
+      "id": 3
+    },
+    {
+      "title": "GALATASARAY",
+      "artist": "Ahmet",
+      "year": 2025,
+      "image": "image",
+      "price": 25,
+      "id": 2
+    },
+    {
+      "title": "GALATASARAY",
+      "artist": "Ahmet",
+      "year": 2025,
+      "image": "image",
+      "price": 25,
+      "id": 1
+    },
+    {
+      "title": "GALATASARAY",
+      "artist": "Ahmet",
+      "year": 2025,
+      "image": "image",
+      "price": 25,
+      "id": 0
+    }
+  ],
+  "databaseId": 6
+}

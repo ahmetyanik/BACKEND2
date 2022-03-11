@@ -1,0 +1,38 @@
+@BASE_URL = http://localhost:3000/api
+
+
+###
+GET {{BASE_URL}}
+
+###
+GET {{BASE_URL}}/users
+
+
+
+###
+GET {{BASE_URL}}/users/6223df7463bb7429ad52b67f
+
+
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "isim":"emre",
+    "email" : "emregmail3.com",
+    "userName":"emrealtunbilek3",
+    "sifre":"123456"
+}
+###
+PATCH  {{BASE_URL}}/users/6223df7463bb7429ad52b67f
+Content-Type: application/json
+
+{
+    "isim":"hasan",
+    "yas":32,
+    "userName":"emrealtunbilek3"
+}
+###
+DELETE   {{BASE_URL}}/users/6223defb663d87f644007a3k
+Content-Type: application/json
+
