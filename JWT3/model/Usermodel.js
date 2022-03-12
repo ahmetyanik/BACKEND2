@@ -10,6 +10,12 @@ const userSchema = new Schema({
   role: {
     type: String,
   },
+  email:{
+    type:String,
+  },
+  password:{
+    type:String
+  }
 });
 
 userSchema.methods.generateToken = async function () {
