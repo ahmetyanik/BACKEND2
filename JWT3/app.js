@@ -25,6 +25,14 @@ const URI = process.env.DATABASE_URI;
 var app = express();
 
 app.use(cors(corsOptions));
+app.use(session({
+  secret: process.env.JWT_SECRET_KEY,
+  resave: false,
+  saveUninitialized: true
+}))
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
