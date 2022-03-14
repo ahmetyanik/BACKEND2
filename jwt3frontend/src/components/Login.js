@@ -32,7 +32,6 @@ function Login() {
         headers: {
           'Content-Type': 'application/json',
           // 'Content-Type': 'application/x-www-form-urlencoded',
-          "Authorization": "merhaba"
         },
       });
       return response.json({deneme:"deneme"}); // parses JSON response into native JavaScript objects
@@ -44,6 +43,12 @@ function Login() {
   useEffect(() => {
     getData();
   }, [token]);
+
+
+
+
+
+
 
   async function loginControl(e) {
     e.preventDefault();
@@ -58,24 +63,28 @@ function Login() {
     const result = await fetch("http://localhost:3000/users/giris", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Authorization:token
+        Accept:"application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(loginObject),
     });
 
-    console.log("stateToken:", token);
+    // const alinantoken = result.headers.get("Authorization");
 
-    const body = await result.json();
+    const tokeniAl = await result.json();
+
+    const bodyIleAlinanToken = tokeniAl.token;
+
+    console.log("token:", bodyIleAlinanToken);
+
 
     localStorage.removeItem("girisToken");
-    localStorage.setItem("girisToken", body.token);
+    localStorage.setItem("girisToken", bodyIleAlinanToken);
 
-    setToken(body.token);
+    setToken(bodyIleAlinanToken);
     navigate("/gizlisayfa")
   }
-  console.log("sonrakiToken:", token);
-
+ 
   return (
     <div className="App d-flex justify-content-center mt-5 align-items-center flex-column">
       <h1>LOGIN PAGE</h1>
