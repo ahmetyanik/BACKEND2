@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <form class="accordion--form">
+      
+          <h1>Accordion form with basic validation</h1>
+      
+          <fieldset class="accordion--form__fieldset" id="fieldset-one">
+            <legend class="accordion--form__legend accordion--form__legend-active">Fieldset 1</legend>
+      
+            <div class="accordion--form__wrapper accordion--form__wrapper-active">
+      
+              <div class="accordion--form__row">
+                <label class="accordion--form__label" for="name">Name *</label> <br />
+                <input class="accordion--form__text required" type="text" name="name" id="name" placeholder="Name" required>
+              </div>
+      
+              <div class="accordion--form__row">
+                <label class="accordion--form__label" for="suname">Surame *</label> <br />
+                <input class="accordion--form__text required" type="text" name="surname" id="surname" placeholder="Surame" required>
+              </div>
+      
+              <div class="accordion--form__row">
+                <label class="accordion--form__label" for="birthday">Birthday</label> <br />
+                <input class="accordion--form__text" type="text" name="birthday" id="birthday" placeholder="Birthday" required>
+              </div>
+      
+              <a class="accordion--form__next-btn">Next</a>
+      
+              <div class="accordion--form__invalid">Please ensure all required fields are filled in</div>
+      
+            </div>
+          </fieldset>
+      
+          <fieldset class="accordion--form__fieldset" id="fieldset-two">
+            <legend class="accordion--form__legend">Fieldset 2</legend>
+      
+            <div class="accordion--form__wrapper">
+      
+              <div class="accordion--form__row">
+                <label class="accordion--form__label" for="Biography">About You *</label> <br />
+                <textarea class="accordion--form__textarea required" name="biography" id="biography" placeholder="Biography" required></textarea>
+              </div>
+      
+              <a class="accordion--form__prev-btn">Prev</a>
+              <a class="accordion--form__next-btn">Next</a>
+      
+              <div class="accordion--form__invalid">Please ensure all required fields are filled in</div>
+      
+            </div>
+          </fieldset>
+      
+          <fieldset class="accordion--form__fieldset" id="fieldset-three">
+            <legend class="accordion--form__legend">Fieldset 3</legend>
+      
+            <div class="accordion--form__wrapper">
+      
+              <div class="accordion--form__row">
+                <label class="accordion--form__label" for="Comments">Comments *</label> <br />
+                <textarea class="accordion--form__textarea required" name="comments" id="comments" placeholder="Comments" required></textarea>
+              </div>
+      
+              <div class="accordion--form__row">
+                <input class="accordion--form__submit" type="submit" name="submit" value="Submit">
+              </div>
+      
+              <a class="accordion--form__prev-btn">Prev</a>
+      
+            </div>
+          </fieldset>
+      
+        </form>
+      
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="./style.js"></script>
+</body>
+</html>

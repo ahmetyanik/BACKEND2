@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.container {
+  margin: 25px auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.accordion--form {
+  background-color: #e5e5e5;
+  padding: 50px;
+  width: 100%;
+}
+
+.accordion--form__fieldset {
+  border: 0;
+  margin: 0 0 1px 0;
+  padding: 0;
+}
+
+.accordion--form__legend {
+  background-color: #555;
+  color: #fff;
+  display: block;
+  margin: 0;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.accordion--form__legend-active {
+  background-color: #ccc;
+  color: #000;
+}
+
+.accordion--form__wrapper {
+  height: 0;
+  overflow: hidden;
+}
+.accordion--form__wrapper-active {
+  height: auto;
+  padding: 30px 0;
+}
+
+.accordion--form__row {
+  clear: both;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.accordion--form__label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.accordion--form__text {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.accordion--form__textarea {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.accordion--form__submit {
+}
+
+.accordion--form__invalid {
+  background-color: red;
+  color: #fff;
+  display: none;
+  margin: 20px 0;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.accordion--form__next-btn, 
+.accordion--form__prev-btn {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 2px 0 0;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.accordion--form__next-btn:hover, 
+.accordion--form__prev-btn:hover {
+  background-color: #000;
+}
