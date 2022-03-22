@@ -53,8 +53,8 @@ function Homepage() {
 
   return (
     <div>
-      <button onClick={loginYap}>Login Butonu</button>
-      <button onClick={guncelle}>Güncelle Butonu</button>
+      <button onClick={loginYap}>LOGIN/REGISTER</button>
+      <button className="px-5" onClick={guncelle}>UPDATE</button>
     </div>
   );
 }
