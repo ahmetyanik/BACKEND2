@@ -7,12 +7,15 @@ const authRoute = require("./routes/auth");
 const app = express();
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const GithubStrategy = require("passport-github2").Strategy;
+const FacebookStrategy = require("passport-facebook").Strategy;
 
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
+const FACEBOOK_APP_ID = process.env.FACEBOOK_CLIENT_ID;
+const FACEBOOK_APP_SECRET = process.env.FACEBOOK_CLIENT_SECRET;
 
 
 
@@ -37,6 +40,8 @@ passport.use(new GithubStrategy({
     done(null,profile)
   }
 ));
+
+
 
 
 passport.serializeUser((user,done)=>{
